@@ -306,6 +306,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                         // User scrolled up, show the button
                         mMenuFAB.showMenuButton(true);
                     }
+                    // User is looking at posts, the refresh animation will be annoying
+                    swipeView.setRefreshing(false);
                 }
             }
         });
